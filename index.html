@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Result Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>Student Result Dashboard</h1>
+            <p>JavaScript ES6 Refresher Case Study</p>
+        </header>
+
+        <section class="stats">
+            <div class="stat-card">
+                <h3>Total Students</h3>
+                <p id="totalStudents">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Passed Students</h3>
+                <p id="passedStudents">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Average Score</h3>
+                <p id="averageScore">0</p>
+            </div>
+        </section>
+
+        <section class="results-section">
+
+            <div class="section-header">
+                <h2>Student Results</h2>
+
+                <button id="filterButton">
+                    Show Passed Students
+                </button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTable">
+                    <!-- JavaScript will display students here -->
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
